@@ -20,7 +20,31 @@ namespace MathGame
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            string username = textBox1.Text; string password = textBox2.Text;
+            CreateUser user = new CreateUser();
+            if (username.Trim() == "" || password.Trim() == "")
+            {
+                MessageBox.Show("Please enter both username and password."); return;
+            }
+            if (user.UserExists(username))
+            {
+                string correctPassword = user.GetPassword(username);
+                if (password == correctPassword)
+                {
+                    MessageBox.Show("Login successful!");
+                    textBox1.Clear(); textBox2.Clear();
+                    Form2 frm = new Form2();
+                    frm.ShowDialog();
+                }
+                else
+                {
+                    MessageBox.Show("Incorrect password.");
+                }
+            }
+            else
+            {
+                MessageBox.Show("User does not exist. Please create a new user first.");
+            }
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)

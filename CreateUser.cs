@@ -10,7 +10,7 @@ namespace MathGame
 {
     public class CreateUser
     {
-        private string note = "users.txt";
+        public string note = "users.txt";
 
         public bool UserExists(string username)
         {
