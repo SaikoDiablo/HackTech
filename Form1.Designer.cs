@@ -70,6 +70,7 @@ namespace MathGame
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(184, 22);
             this.textBox1.TabIndex = 3;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBox2
             // 
@@ -88,6 +89,7 @@ namespace MathGame
             this.button1.TabIndex = 5;
             this.button1.Text = "Login";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -120,7 +122,7 @@ namespace MathGame
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::MathGame.Properties.Resources._2f947bdffd8f9f954874f983ddfeabfa;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(664, 331);
+            this.ClientSize = new System.Drawing.Size(706, 358);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
