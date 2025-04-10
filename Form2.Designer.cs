@@ -35,6 +35,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -76,6 +77,7 @@
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(175, 132);
             this.listBox1.TabIndex = 3;
+            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // label3
             // 
@@ -98,6 +100,7 @@
             this.button1.TabIndex = 5;
             this.button1.Text = "STOP";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label4
             // 
@@ -109,6 +112,15 @@
             this.label4.Size = new System.Drawing.Size(61, 27);
             this.label4.TabIndex = 6;
             this.label4.Text = "Total";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(109, 152);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 22);
+            this.textBox2.TabIndex = 7;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // Form2
             // 
@@ -116,6 +128,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::MathGame.Properties.Resources.abstract_template_blue_background_white_squares_free_vector;
             this.ClientSize = new System.Drawing.Size(603, 450);
+            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
@@ -139,5 +152,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }

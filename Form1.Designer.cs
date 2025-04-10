@@ -115,6 +115,7 @@ namespace MathGame
             this.label4.Size = new System.Drawing.Size(473, 40);
             this.label4.TabIndex = 7;
             this.label4.Text = "MATHEMATICS CALCULATION";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // Form1
             // 
